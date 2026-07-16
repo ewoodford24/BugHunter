@@ -1,0 +1,175 @@
+body {
+
+    background:#151515;
+    color:white;
+    font-family:Arial, sans-serif;
+
+}
+
+
+.game {
+
+    width:800px;
+    margin:auto;
+    padding:30px;
+
+}
+
+
+header {
+
+    text-align:center;
+    background:#222;
+    padding:20px;
+    border-radius:15px;
+
+}
+
+
+h1 {
+
+    color:#ff4d6d;
+    font-size:45px;
+
+}
+
+
+section {
+
+    background:#242424;
+    margin-top:20px;
+    padding:20px;
+    border-radius:15px;
+
+}
+
+
+
+.xpbar {
+
+    background:#444;
+    height:20px;
+    border-radius:10px;
+
+}
+
+
+#xpFill {
+
+    background:#4caf50;
+    width:0%;
+    height:100%;
+    border-radius:10px;
+
+}
+
+
+
+textarea {
+
+    width:100%;
+    height:180px;
+
+    background:#111;
+    color:#00ff99;
+
+    font-family:monospace;
+    font-size:18px;
+
+    padding:15px;
+
+}
+
+
+button {
+
+    background:#ff4d6d;
+    color:white;
+
+    border:none;
+    padding:12px 20px;
+
+    margin:5px;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+}
+
+
+button:hover {
+
+    background:#ff758f;
+
+}
+
+
+
+.bugbuddy {
+
+    background:#333;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    font-size:20px;
+
+}
+
+
+#output {
+
+    background:black;
+
+    min-height:60px;
+
+    padding:15px;
+
+    font-family:monospace;
+
+}
+
+#map {
+
+    background:#1f1f1f;
+
+}
+
+
+.world {
+
+    background:#333;
+
+    padding:15px;
+
+    margin:15px 0;
+
+    border-radius:15px;
+
+}
+
+
+.world h3 {
+
+    color:#ffcc00;
+
+}
+
+
+.locked {
+
+    opacity:0.5;
+
+}
+
+
+
+.world button {
+
+    margin:5px;
+
+}

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bug Hunter: Python Debugging Academy</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="game">
+
+
+<header>
+
+<h1>🐞 Bug Hunter</h1>
+
+<h2>Python Debugging Academy</h2>
+
+</header>
+
+
+<section id="welcome">
+
+<h2>🐞 Welcome Debug Detective!</h2>
+
+<p>
+Enter your name to begin your hunt.
+</p>
+
+<input id="nameInput" placeholder="Your name">
+
+
+<button onclick="startGame()">
+START HUNT
+</button>
+
+</section>
+
+
+<section id="gameArea" style="display:none;">
+
+<section id="player">
+
+    <h3>🕵️ Debug Detective</h3>
+
+    <p>
+        Level:
+        <span id="level">1</span>
+    </p>
+
+    <p>
+        XP:
+        <span id="xp">0</span>/500
+    </p>
+	<h3>🏆 Badges</h3>
+
+	<div id="badgeList">
+
+	No badges yet...
+
+	</div>
+
+    <div class="xpbar">
+
+        <div id="xpFill"></div>
+
+    </div>
+
+
+</section>
+
+
+
+
+
+<section id="map">
+
+<h2>🗺️ Bug Hunter Map</h2>
+
+<div class="world">
+
+<h3>🌲 Variables Village</h3>
+
+<button onclick="startMission(0)">
+🐞 Mission 1
+</button>
+
+<button onclick="startMission(1)">
+🐞 Mission 2
+</button>
+
+<button onclick="startMission(2)">
+🐞 Mission 3
+</button>
+
+</div>
+
+
+<div class="world locked">
+
+<h3>🌵 Decision Desert 🔒</h3>
+
+<p>Complete Variables Village to unlock</p>
+
+</div>
+
+
+<div class="world locked">
+
+<h3>🌊 Loop Lagoon 🔒</h3>
+
+<p>Coming soon</p>
+
+</div>
+
+
+<div class="world locked">
+
+<h3>🏰 Function Fortress 🔒</h3>
+
+<p>Coming soon</p>
+
+</div>
+
+
+</section>
+
+
+<h2 id="world">
+🌲 Variables Village
+</h2>
+
+
+<h3 id="missionNumber">
+Mission 1 of 3
+</h3>
+
+
+<h2 id="missionTitle">
+The Missing Quote
+</h2>
+
+
+
+<div class="bugbuddy">
+
+
+    <div class="bug">
+
+        🐞
+
+    </div>
+
+
+    <p id="buddyText">
+
+    Hi Debug Detective!
+    A bug has escaped into this program.
+    Can you find it?
+
+    </p>
+
+
+</div>
+
+
+
+
+
+<h3>🐍 Broken Python Code:</h3>
+
+
+
+<textarea id="code">
+
+print(Hello World)
+
+</textarea>
+
+
+
+
+<br>
+
+
+
+<button onclick="runCode()">
+▶ Run
+</button>
+
+
+<button onclick="giveHint()">
+💡 Hint
+</button>
+
+
+<button onclick="submitCode()">
+✅ Submit
+</button>
+
+
+
+
+
+<h3>Terminal Output:</h3>
+
+
+<div id="output">
+
+Waiting for code...
+
+</div>
+
+
+
+</section>
+
+</section>
+
+
+</div>
+
+
+
+
+
+<!-- Load Python in the browser -->
+<script src="https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"></script>
+
+<!-- Load missions -->
+<script src="missions.js"></script>
+
+<script src="save.js"></script>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
